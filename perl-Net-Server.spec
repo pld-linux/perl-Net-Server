@@ -2,8 +2,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	Net-Server
+%define		pdir	Net
+%define		pnam	Net-Server
 Summary:	Net::Server perl module
 Summary(cs):	Modul Net::Server pro Perl
 Summary(da):	Perlmodul Net::Server
