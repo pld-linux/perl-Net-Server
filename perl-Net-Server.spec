@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Net::Server
 Summary(it):	Modulo di Perl Net::Server
 Summary(ja):	Net::Server Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Net::Server ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Net::Server
+Summary(nb):	Perlmodul Net::Server
 Summary(pl):	Modu³ Perla Net::Server
 Summary(pt_BR):	Módulo Perl Net::Server
 Summary(pt):	Módulo de Perl Net::Server
