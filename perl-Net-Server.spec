@@ -22,12 +22,12 @@ Summary(sv):	Net::Server Perlmodul
 Summary(uk):	Модуль для Perl Net::Server
 Summary(zh_CN):	Net::Server Perl дё©И
 Name:		perl-Net-Server
-Version:	0.86
+Version:	0.87
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	71b498c3562489ed17d365b03127b276
+# Source0-md5:	0b8553db414dac4c43b9f9282f8e149c
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
