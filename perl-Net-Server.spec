@@ -2,7 +2,6 @@
 %define	pdir	Net
 %define	pnam	Net-Server
 Summary:	Net::Server perl module
-Summary:	Net::Server perl module 
 Summary(cs):	Modul Net::Server pro Perl
 Summary(da):	Perlmodul Net::Server
 Summary(de):	Net::Server Perl Modul
