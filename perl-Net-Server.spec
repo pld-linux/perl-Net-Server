@@ -24,7 +24,7 @@ Summary(zh_CN):	Net::Server Perl Ä£¿é
 Name:		perl-Net-Server
 Version:	0.87
 Release:	1
-License:	GPL/Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	0b8553db414dac4c43b9f9282f8e149c
@@ -73,6 +73,7 @@ serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
 %{?with_tests: %{__make} test}
 
 %install
