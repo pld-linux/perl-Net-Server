@@ -19,8 +19,8 @@ Summary(sv):	Net::Server Perlmodul
 Summary(uk):	Модуль для Perl Net::Server
 Summary(zh_CN):	Net::Server Perl дё©И
 Name:		perl-Net-Server
-Version:	0.84
-Release:	3
+Version:	0.85
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
