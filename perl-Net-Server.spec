@@ -61,7 +61,7 @@ NetServer::Generic. Ma mo¿liwo¶æ uruchamiania jako proces inetd
 (Net::Server::INET), serwer dla pojedynczego po³±czenia (Net::Server
 lub Net::Server::Single), serwer forkuj±cy siê (Net::Server::Fork),
 serwer preforkuj±cy siê i utrzymuj±cy sta³± liczbê potomków
-(Net::Server::PreForkSimple) lub jakoserwer preforkuj±cy siê i
+(Net::Server::PreForkSimple) lub jako serwer preforkuj±cy siê i
 zarz±dzaj±cy liczb± potomków w zale¿no¶ci od obci±¿enia serwera
 (Net::Server::PreFork). We wszystkich rodzajach oprócz inetd
 serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
