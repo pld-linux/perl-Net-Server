@@ -68,7 +68,7 @@ serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
