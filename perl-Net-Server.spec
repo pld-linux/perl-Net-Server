@@ -1,3 +1,6 @@
+#
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Net-Server
@@ -19,13 +22,13 @@ Summary(sv):	Net::Server Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Net::Server
 Summary(zh_CN):	Net::Server Perl Ä£¿é
 Name:		perl-Net-Server
-Version:	0.85
+Version:	0.86
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	5e56cf97ef7bafbdbe2ca0e66ef1da99
-BuildRequires:	perl-devel >= 5
+# Source0-md5:	71b498c3562489ed17d365b03127b276
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -70,10 +73,12 @@ serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+%{?with_tests: %{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
