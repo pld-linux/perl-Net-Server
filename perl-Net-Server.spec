@@ -66,7 +66,7 @@ serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
 %setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
