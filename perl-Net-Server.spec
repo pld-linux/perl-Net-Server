@@ -15,19 +15,20 @@ Summary(ja):	Net::Server Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Net::Server ÆÞ ¸ðÁÙ
 Summary(nb):	Perlmodul Net::Server
 Summary(pl):	Modu³ Perla Net::Server
-Summary(pt_BR):	Módulo Perl Net::Server
 Summary(pt):	Módulo de Perl Net::Server
+Summary(pt_BR):	Módulo Perl Net::Server
 Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Net::Server
 Summary(sv):	Net::Server Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Net::Server
 Summary(zh_CN):	Net::Server Perl Ä£¿é
 Name:		perl-Net-Server
-Version:	0.93
-Release:	0.1
+Version:	0.94
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	52f10776f695ea2ea94f656aa900dd0e
+# Source0-md5:	2dc5c27056e15b425c9b8421a51fc8dc
+URL:		http://search.cpan.org/dist/Net-Server/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -63,8 +64,8 @@ lub Net::Server::Single), serwer forkuj±cy siê (Net::Server::Fork),
 serwer preforkuj±cy siê i utrzymuj±cy sta³± liczbê potomków
 (Net::Server::PreForkSimple) lub jako serwer preforkuj±cy siê i
 zarz±dzaj±cy liczb± potomków w zale¿no¶ci od obci±¿enia serwera
-(Net::Server::PreFork). We wszystkich rodzajach oprócz inetd
-serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
+(Net::Server::PreFork). We wszystkich rodzajach oprócz inetd serwer ma
+mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
 
 %prep
 %setup -q -n %{pnam}-%{version}
@@ -74,7 +75,7 @@ serwer ma mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?with_tests: %{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
