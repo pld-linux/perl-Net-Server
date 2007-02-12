@@ -5,22 +5,22 @@
 %define		pdir	Net
 %define		pnam	Net-Server
 Summary:	Net::Server perl module
-Summary(cs):	Modul Net::Server pro Perl
-Summary(da):	Perlmodul Net::Server
-Summary(de):	Net::Server Perl Modul
-Summary(es):	Módulo de Perl Net::Server
-Summary(fr):	Module Perl Net::Server
-Summary(it):	Modulo di Perl Net::Server
-Summary(ja):	Net::Server Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Net::Server ÆŞ ¸ğÁÙ
-Summary(nb):	Perlmodul Net::Server
-Summary(pl):	Modu³ Perla Net::Server
-Summary(pt):	Módulo de Perl Net::Server
-Summary(pt_BR):	Módulo Perl Net::Server
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Net::Server
-Summary(sv):	Net::Server Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Net::Server
-Summary(zh_CN):	Net::Server Perl Ä£¿é
+Summary(cs.UTF-8):   Modul Net::Server pro Perl
+Summary(da.UTF-8):   Perlmodul Net::Server
+Summary(de.UTF-8):   Net::Server Perl Modul
+Summary(es.UTF-8):   MÃ³dulo de Perl Net::Server
+Summary(fr.UTF-8):   Module Perl Net::Server
+Summary(it.UTF-8):   Modulo di Perl Net::Server
+Summary(ja.UTF-8):   Net::Server Perl ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«
+Summary(ko.UTF-8):   Net::Server í„ ëª¨ì¤„
+Summary(nb.UTF-8):   Perlmodul Net::Server
+Summary(pl.UTF-8):   ModuÅ‚ Perla Net::Server
+Summary(pt.UTF-8):   MÃ³dulo de Perl Net::Server
+Summary(pt_BR.UTF-8):   MÃ³dulo Perl Net::Server
+Summary(ru.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl Net::Server
+Summary(sv.UTF-8):   Net::Server Perlmodul
+Summary(uk.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl Net::Server
+Summary(zh_CN.UTF-8):   Net::Server Perl æ¨¡å—
 Name:		perl-Net-Server
 Version:	0.94
 Release:	2
@@ -52,21 +52,21 @@ on server load ("Net::Server::PreFork"). In all but the inetd type,
 the server provides the ability to connect to one or to multiple
 server ports.
 
-%description -l pl
-Net::Server jest rozszerzalnym, ogólnym silnikiem serwerowym dla
-Perla. Net::Server ³±czy dobre cechy modu³ów Net::Daemon (0.34),
-NetServer::Generic (1.03) i Net::FTPServer (1.0), a tak¿e ró¿ne
+%description -l pl.UTF-8
+Net::Server jest rozszerzalnym, ogÃ³lnym silnikiem serwerowym dla
+Perla. Net::Server Å‚Ä…czy dobre cechy moduÅ‚Ã³w Net::Daemon (0.34),
+NetServer::Generic (1.03) i Net::FTPServer (1.0), a takÅ¼e rÃ³Å¼ne
 koncepcje z serwera WWW Apache.
 
-Net::Server próbuje byæ ogólnym serwerem, takim jak Net::Daemon i
-NetServer::Generic. Ma mo¿liwo¶æ uruchamiania jako proces inetd
-(Net::Server::INET), serwer dla pojedynczego po³±czenia (Net::Server
-lub Net::Server::Single), serwer forkuj±cy siê (Net::Server::Fork),
-serwer preforkuj±cy siê i utrzymuj±cy sta³± liczbê potomków
-(Net::Server::PreForkSimple) lub jako serwer preforkuj±cy siê i
-zarz±dzaj±cy liczb± potomków w zale¿no¶ci od obci±¿enia serwera
-(Net::Server::PreFork). We wszystkich rodzajach oprócz inetd serwer ma
-mo¿liwo¶æ ³±czenia na jeden lub wiele portów.
+Net::Server prÃ³buje byÄ‡ ogÃ³lnym serwerem, takim jak Net::Daemon i
+NetServer::Generic. Ma moÅ¼liwoÅ›Ä‡ uruchamiania jako proces inetd
+(Net::Server::INET), serwer dla pojedynczego poÅ‚Ä…czenia (Net::Server
+lub Net::Server::Single), serwer forkujÄ…cy siÄ™ (Net::Server::Fork),
+serwer preforkujÄ…cy siÄ™ i utrzymujÄ…cy staÅ‚Ä… liczbÄ™ potomkÃ³w
+(Net::Server::PreForkSimple) lub jako serwer preforkujÄ…cy siÄ™ i
+zarzÄ…dzajÄ…cy liczbÄ… potomkÃ³w w zaleÅ¼noÅ›ci od obciÄ…Å¼enia serwera
+(Net::Server::PreFork). We wszystkich rodzajach oprÃ³cz inetd serwer ma
+moÅ¼liwoÅ›Ä‡ Å‚Ä…czenia na jeden lub wiele portÃ³w.
 
 %prep
 %setup -q -n %{pnam}-%{version}
