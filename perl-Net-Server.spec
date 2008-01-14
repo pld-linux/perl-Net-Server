@@ -1,5 +1,6 @@
 #
-%bcond_without	tests	# do not perform "make test"
+# tests hang on udp
+%bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
@@ -23,7 +24,7 @@ Summary(uk.UTF-8):	Модуль для Perl Net::Server
 Summary(zh_CN.UTF-8):	Net::Server Perl 模块
 Name:		perl-Net-Server
 Version:	0.97
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
