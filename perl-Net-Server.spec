@@ -5,29 +5,14 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
 %define		pnam	Net-Server
-Summary:	Net::Server perl module
-Summary(cs.UTF-8):	Modul Net::Server pro Perl
-Summary(da.UTF-8):	Perlmodul Net::Server
-Summary(de.UTF-8):	Net::Server Perl Modul
-Summary(es.UTF-8):	Módulo de Perl Net::Server
-Summary(fr.UTF-8):	Module Perl Net::Server
-Summary(it.UTF-8):	Modulo di Perl Net::Server
-Summary(ja.UTF-8):	Net::Server Perl モジュール
-Summary(ko.UTF-8):	Net::Server 펄 모줄
-Summary(nb.UTF-8):	Perlmodul Net::Server
-Summary(pl.UTF-8):	Moduł Perla Net::Server
-Summary(pt.UTF-8):	Módulo de Perl Net::Server
-Summary(pt_BR.UTF-8):	Módulo Perl Net::Server
-Summary(ru.UTF-8):	Модуль для Perl Net::Server
-Summary(sv.UTF-8):	Net::Server Perlmodul
-Summary(uk.UTF-8):	Модуль для Perl Net::Server
-Summary(zh_CN.UTF-8):	Net::Server Perl 模块
+Summary:	Net::Server - extensible, general Perl server engine
+Summary(pl.UTF-8):	Net::Server - ogólny, rozszerzalny silnik serwerowy w Perlu
 Name:		perl-Net-Server
 Version:	0.97
 Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
 # Source0-md5:	f884b6c5b1d2698a82bbc7ba659690a1
 URL:		http://search.cpan.org/dist/Net-Server/
 BuildRequires:	perl-devel >= 1:5.8.0
