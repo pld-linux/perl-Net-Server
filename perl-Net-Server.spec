@@ -1,3 +1,6 @@
+# TODO
+# - Module IO::Multiplex is required for Multiplex. at /usr/share/perl5/vendor_perl/Net/Server/Multiplex.pm line 32.
+#   subpkg or add to Requires?
 #
 # tests hang on udp
 %bcond_with	tests	# perform "make test"
