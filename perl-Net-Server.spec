@@ -12,7 +12,7 @@ Summary:	Net::Server - extensible, general Perl server engine
 Summary(pl.UTF-8):	Net::Server - ogólny, rozszerzalny silnik serwerowy w Perlu
 Name:		perl-Net-Server
 Version:	0.97
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
@@ -72,11 +72,17 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
+rm -f $RPM_BUILD_ROOT/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/auto/Net/Server/.packlist
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README examples
+%doc Changes README
 %{perl_vendorlib}/Net/Server*
 %{_mandir}/man3/*
+%{_examplesdir}/*
