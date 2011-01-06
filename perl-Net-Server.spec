@@ -4,15 +4,15 @@
 #
 # tests hang on udp
 %bcond_with	tests	# perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Net
 %define		pnam	Net-Server
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Server - extensible, general Perl server engine
 Summary(pl.UTF-8):	Net::Server - ogólny, rozszerzalny silnik serwerowy w Perlu
 Name:		perl-Net-Server
 Version:	0.97
-Release:	3
+Release:	4
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
@@ -20,6 +20,7 @@ Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
 URL:		http://search.cpan.org/dist/Net-Server/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+Suggests:	perl-Net-CIDR
 Conflicts:	amavisd-new < 1:2.4.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -75,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-rm -f $RPM_BUILD_ROOT/usr/lib/perl5/vendor_perl/5.8.0/i686-pld-linux-thread-multi/auto/Net/Server/.packlist
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Net/Server/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
