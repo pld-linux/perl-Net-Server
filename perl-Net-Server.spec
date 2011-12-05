@@ -76,6 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Net/Server.pod
 rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Net/Server/.packlist
 
 %clean
@@ -84,6 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/Net/Server*
-%{_mandir}/man3/*
-%{_examplesdir}/*
+%{perl_vendorlib}/Net/Server.pm
+%{perl_vendorlib}/Net/Server
+%{_mandir}/man3/Net::Server*.3pm*
+%{_examplesdir}/%{name}-%{version}
