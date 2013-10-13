@@ -85,7 +85,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%attr(755,root,root) %{_bindir}/net-server
 %{perl_vendorlib}/Net/Server.pm
 %{perl_vendorlib}/Net/Server
+%{_mandir}/man1/net-server.1p*
 %{_mandir}/man3/Net::Server*.3pm*
 %{_examplesdir}/%{name}-%{version}
