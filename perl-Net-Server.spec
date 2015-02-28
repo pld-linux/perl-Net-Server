@@ -11,12 +11,12 @@
 Summary:	Net::Server - extensible, general Perl server engine
 Summary(pl.UTF-8):	Net::Server - ogólny, rozszerzalny silnik serwerowy w Perlu
 Name:		perl-Net-Server
-Version:	2.007
+Version:	2.008
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
-# Source0-md5:	b256c35a18caecc8fce9e6e1f2825658
+# Source0-md5:	85d488bc800f582839dd924ffa3f0d26
 URL:		http://search.cpan.org/dist/Net-Server/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
