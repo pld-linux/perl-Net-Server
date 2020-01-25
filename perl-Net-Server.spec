@@ -7,7 +7,6 @@
 
 %define		pdir	Net
 %define		pnam	Net-Server
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Server - extensible, general Perl server engine
 Summary(pl.UTF-8):	Net::Server - ogólny, rozszerzalny silnik serwerowy w Perlu
 Name:		perl-Net-Server
