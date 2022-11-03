@@ -3,7 +3,7 @@
 #   subpkg or add to Requires?
 #
 # tests hang on udp
-%bcond_with	tests	# perform "make test"
+%bcond_with	tests	# unit tests
 
 %define		pdir	Net
 %define		pnam	Net-Server
@@ -16,9 +16,10 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
 # Source0-md5:	d97171b4b2f0ebfea1d5fa03207eaaf6
-URL:		http://search.cpan.org/dist/Net-Server/
+URL:		https://metacpan.org/dist/Net-Server
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Suggests:	perl-Net-CIDR
 Conflicts:	amavisd-new < 1:2.4.1
 BuildArch:	noarch
