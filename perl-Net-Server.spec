@@ -14,9 +14,10 @@ Version:	2.018
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Net/%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Net/BBB/%{pnam}-%{version}.tar.gz
 # Source0-md5:	c457329d6884c641c1222bafeb7d9b43
 URL:		https://metacpan.org/dist/Net-Server
+BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
@@ -87,7 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes
 %attr(755,root,root) %{_bindir}/net-server
 %{perl_vendorlib}/Net/Server.pm
 %{perl_vendorlib}/Net/Server
